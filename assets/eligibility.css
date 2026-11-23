@@ -1,0 +1,28 @@
+.survey-width { max-width: 47rem; }
+.survey-intro { background: var(--mint); padding-block: clamp(2rem, 6vw, 4rem); }
+.survey-intro h1 { font-size: clamp(2.2rem, 5vw, 3.75rem); }
+.survey-intro .lead { max-width: 43rem; }
+.survey-body { padding-block: clamp(2rem, 5vw, 3.5rem); }
+.survey-group + .survey-group { margin-top: 2.5rem; }
+.survey-group h2, .survey-result h2 { font-size: clamp(1.55rem, 3.5vw, 2rem); margin-bottom: 1rem; }
+.survey-group fieldset { margin: 0; padding: 0 0 1.15rem; min-inline-size: 0; border: 0; }
+.survey-group fieldset + fieldset { margin-top: 0.6rem; }
+.survey-group legend { width: 100%; padding: 0.9rem 0 0.45rem; border-top: 1px solid var(--line); font-weight: 650; }
+.survey-hint { margin: 0 0 0.6rem; color: var(--muted); }
+ul.survey-hint { padding-left: 1.35rem; }
+.survey-options, .survey-actions:not([hidden]) { display: flex; flex-wrap: wrap; gap: 0.45rem 0.75rem; }
+.survey-options label { display: flex; align-items: center; gap: 0.45rem; min-height: 2.75rem; padding: 0.3rem 0.65rem; border: 1px solid var(--line); border-radius: 0.4rem; cursor: pointer; }
+.survey-options label:has(input:checked) { background: var(--mint); border-color: var(--accent); }
+.survey-options input { margin: 0; width: 1rem; height: 1rem; accent-color: var(--accent); }
+.survey-actions { align-items: center; margin-top: 0.75rem; }
+.survey-actions .button { margin: 0; }
+button.button, .text-button { font: inherit; font-weight: 700; cursor: pointer; }
+button.button { border: 0; }
+.text-button { min-height: 2.75rem; padding: 0.4rem; border: 0; color: var(--accent); background: none; text-decoration: underline; text-underline-offset: 0.22em; }
+.survey-result { margin-top: 1.5rem; padding: clamp(1rem, 4vw, 2rem); border: 1px solid var(--line); border-radius: 0.6rem; background: var(--mint); }
+#keskusteltavat { margin-top: 0.8rem; }
+.survey-result ul { padding-inline-start: 1.4rem; }
+
+@media (max-width: 32rem) {
+  .survey-options { display: grid; }
+}
