@@ -4,9 +4,10 @@ const form = document.querySelector("#itsearvio");
 const questions = Array.from(form.querySelectorAll("fieldset"));
 const summary = document.querySelector("#yhteenveto");
 const heading = document.querySelector("#yhteenveto-otsikko");
-const count = document.querySelector("#vastatut");
+const summaryStatus = document.querySelector("#vastatut");
 const review = document.querySelector("#keskusteltavat");
 const reviewList = document.querySelector("#keskusteltavat-kohdat");
+const treatmentNote = document.querySelector("#rtms-tutkimuksen-ulkopuolella");
 const showSummary = document.querySelector("#nayta-yhteenveto");
 
 form.addEventListener("submit", (event) => event.preventDefault());
@@ -21,7 +22,7 @@ function updateSummary() {
     if (!choice) continue;
 
     answered += 1;
-    if (choice.value !== "yes") {
+    if (choice.value === "unsure" || choice.value === question.dataset.reviewAnswer) {
       const item = document.createElement("li");
       const link = document.createElement("a");
       link.href = "#" + question.id;
@@ -31,14 +32,23 @@ function updateSummary() {
     }
   }
 
-  count.textContent = "Vastattuja kohtia " + answered + " / " + questions.length + ".";
+  if (answered === 0) {
+    summaryStatus.textContent = "Et ole vielä vastannut kysymyksiin.";
+  } else if (answered < questions.length) {
+    summaryStatus.textContent = "Osa kysymyksistä jäi vastaamatta. Voit vielä täydentää vastauksiasi.";
+  } else if (topics.length === 0) {
+    summaryStatus.textContent = "Vastaustesi perusteella sovellut alustavasti tutkimukseen.";
+  } else {
+    summaryStatus.textContent = "";
+  }
   reviewList.replaceChildren(...topics);
   review.hidden = topics.length === 0;
+  treatmentNote.hidden = review.hidden;
 }
 
 showSummary.addEventListener("click", () => {
-  updateSummary();
   summary.hidden = false;
+  updateSummary();
   heading.focus();
 });
 
@@ -49,7 +59,7 @@ form.addEventListener("change", () => {
 form.addEventListener("reset", () => {
   summary.hidden = true;
   reviewList.replaceChildren();
-  count.textContent = "";
+  summaryStatus.textContent = "";
 });
 
 window.addEventListener("pageshow", () => form.reset());

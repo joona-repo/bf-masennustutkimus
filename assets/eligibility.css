@@ -3,11 +3,10 @@
 .survey-intro h1 { font-size: clamp(2.2rem, 5vw, 3.75rem); }
 .survey-intro .lead { max-width: 43rem; }
 .survey-body { padding-block: clamp(2rem, 5vw, 3.5rem); }
-.survey-group + .survey-group { margin-top: 2.5rem; }
-.survey-group h2, .survey-result h2 { font-size: clamp(1.55rem, 3.5vw, 2rem); margin-bottom: 1rem; }
-.survey-group fieldset { margin: 0; padding: 0 0 1.15rem; min-inline-size: 0; border: 0; }
-.survey-group fieldset + fieldset { margin-top: 0.6rem; }
-.survey-group legend { width: 100%; padding: 0.9rem 0 0.45rem; border-top: 1px solid var(--line); font-weight: 650; }
+.survey-result h2 { font-size: clamp(1.55rem, 3.5vw, 2rem); margin-bottom: 1rem; }
+#itsearvio fieldset { margin: 0; padding: 0 0 1.15rem; min-inline-size: 0; border: 0; }
+#itsearvio fieldset + fieldset { margin-top: 0.6rem; }
+#itsearvio legend { width: 100%; padding: 0.9rem 0 0.45rem; border-top: 1px solid var(--line); font-weight: 650; }
 .survey-hint { margin: 0 0 0.6rem; color: var(--muted); }
 ul.survey-hint { padding-left: 1.35rem; }
 .survey-options, .survey-actions:not([hidden]) { display: flex; flex-wrap: wrap; gap: 0.45rem 0.75rem; }

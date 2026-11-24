@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <meta http-equiv="Content-Security-Policy" content="form-action 'none'">
-  <title>Osallistumisen edellytykset | Masennustutkimus</title>
+  <title>Voisiko tutkimus sopia sinulle? | Masennustutkimus</title>
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/eligibility.css">
   <script src="assets/eligibility.js" defer></script>
@@ -23,198 +23,96 @@
   <main id="sisalto">
     <section class="survey-intro">
       <div class="wrap survey-width">
-        <h1>Osallistumisen edellytykset</h1>
-        <p class="lead">Käy läpi tutkimukseen ja TMS-lähetteeseen liittyvät kohdat. Voit jättää kohdan väliin tai valita ”En ole varma”. Vastauksia ei tallenneta eikä lähetetä.</p>
-        <p class="lead">Tutkimukseen hakeudutaan hoitavan lääkärin TMS-lähetteellä HUSin psykiatrian neuromodulaatiokeskukseen. Soveltuvuus arvioidaan terveydenhuollossa.</p>
+        <h1>Voisiko tutkimus sopia sinulle?</h1>
+        <p class="lead">Näillä kysymyksillä voit alustavasti arvioida, voisiko tutkimus sopia sinulle. Voit ohittaa kysymyksen tai valita ”En ole varma”. Vastauksia ei tallenneta eikä lähetetä.</p>
+        <p class="lead">Huomaa, että kysely ei arvioi soveltuvuutta tutkimuksen ulkopuoliseen rTMS hoitoon.</p>
       </div>
     </section>
     <div class="wrap survey-width survey-body">
       <noscript><p>Kohdat voi lukea tällä sivulla. Vastausten yhteenvedon näyttäminen edellyttää JavaScriptiä.</p></noscript>
-      <form id="itsearvio" autocomplete="off" aria-label="Osallistumisen edellytysten itsearviointi">
+      <form id="itsearvio" autocomplete="off" aria-label="Alustava kysely tutkimukseen osallistumisesta">
 
-          <section class="survey-group" aria-labelledby="osa-1">
-            <h2 id="osa-1">Ikä, kieli ja masennuksen hoito</h2>
-            <fieldset id="kohta-1" data-topic="Ikä">
-              <legend>Olen 18–67-vuotias.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-1" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-1" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-1" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-2" data-topic="Suomen kielen taito" aria-describedby="kohta-2-ohje">
-              <legend>Suomen kielen taitoni on hyvä.</legend>
-              <p class="survey-hint" id="kohta-2-ohje">Tutkimusmateriaalit ja kyselyt ovat saatavilla suomeksi.</p>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-2" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-2" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-2" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-3" data-topic="Oikeustoimikelpoisuus">
-              <legend>Olen täysivaltainen ja oikeustoimikelpoinen. En ole holhouksen alainen, en suorita vankeusrangaistusta eikä minulla ole kesken oikeuspsykiatrista prosessia.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-3" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-3" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-3" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-4" data-topic="Masennusdiagnoosi ja oireiden voimakkuus">
-              <legend>Minulla on masennusdiagnoosi, ja tämänhetkiset masennusoireeni ovat vähintään keskivaikeita.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-4" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-4" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-4" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-5" data-topic="Masennusjakson kesto">
-              <legend>Nykyinen masennusjaksoni on kestänyt alle kaksi vuotta.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-5" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-5" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-5" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-6" data-topic="Aiemmat lääkekokeilut">
-              <legend>Olen kokeillut vähintään kahta mieliala- tai masennuslääkettä.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-6" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-6" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-6" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-          </section>
-
-          <section class="survey-group" aria-labelledby="osa-2">
-            <h2 id="osa-2">Terveydentila ja turvallisuus</h2>
-            <fieldset id="kohta-7" data-topic="Tämänhetkinen tilanne">
-              <legend>En ole akuutissa itsemurhavaarassa enkä psykiatrisessa osastohoidossa.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-7" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-7" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-7" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-8" data-topic="Muut psykiatriset diagnoosit">
-              <legend>Minulla ei ole todettu kaksisuuntaista mielialahäiriötä tai psykoosisairautta.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-8" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-8" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-8" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-9" data-topic="Ahtaanpaikankammo">
-              <legend>Minulla ei ole ahtaanpaikankammoa.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-9" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-9" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-9" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-10" data-topic="Epilepsia ja kohtaukset">
-              <legend>Minulla ei ole todettu epilepsiaa, eikä minulla ole ollut selittämättömiä tajuttomuus- tai kouristuskohtauksia.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-10" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-10" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-10" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-11" data-topic="Kuulo ja korvasairaudet">
-              <legend>Minulla ei ole melun pahentamia korvaoireita tai -sairauksia, kuten tinnitusta tai kuulonalenemaa.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-11" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-11" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-11" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-12" data-topic="Raskaus ja imetys">
-              <legend>En ole raskaana enkä imetä.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-12" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-12" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-12" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-13" data-topic="Päihteet hoitojakson aikana">
-              <legend>Jos käytän runsaasti päihteitä, alkoholi mukaan lukien, pystyn sitoutumaan päihteettömyyteen hoitojakson ajaksi.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-13" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-13" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-13" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-          </section>
-
-          <section class="survey-group" aria-labelledby="osa-3">
-            <h2 id="osa-3">Lävistykset, implantit ja muut toimenpiteet</h2>
-            <fieldset id="kohta-14" data-topic="Lävistykset">
-              <legend>Jos minulla on lävistyksiä, pystyn poistamaan ne itse rTMS-hoidon ajaksi.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-14" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-14" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-14" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-15" data-topic="Tatuoinnit ja kestopigmentointi">
-              <legend>Minulla ei ole tatuointeja pään tai kaulan alueella eikä kestopigmentointia kasvoissa, kuten kulmakarvoissa tai silmien rajauksissa.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-15" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-15" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-15" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-16" data-topic="Implantit ja muut lääkinnälliset laitteet" aria-describedby="kohta-16-ohje">
-              <legend>Minulla ei ole mitään seuraavista.</legend>
-              <ul class="survey-hint" id="kohta-16-ohje">
-                <li>Aneurysmaklipsi tai suntti</li>
-                <li>Sydämen keinoläppä, sydämentahdistin tai hermostimulaattori</li>
-                <li>Sisäkorvaimplantti</li>
-                <li>Kiinteä oikomishoidon retentiolanka tai -kaari</li>
-                <li>Lääkeainepumppu tai kuparikierukka</li>
-              </ul>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-16" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-16" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-16" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-          </section>
-
-          <section class="survey-group" aria-labelledby="osa-4">
-            <h2 id="osa-4">Käynnit ja tutkimukseen osallistuminen</h2>
-            <fieldset id="kohta-17" data-topic="Kuvantamiskäynnit">
-              <legend>Pystyn käymään tutkimuksen aikana kahdesti Aalto-yliopistolla aivokuvantamisessa (MEG ja EEG sekä magneettikuvaus).</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-17" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-17" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-17" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-18" data-topic="Geeninäyte">
-              <legend>Olen valmis antamaan geeninäytteen veri- tai sylkinäytteenä.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-18" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-18" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-18" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-19" data-topic="Valmius pidempiin hoitosarjoihin">
-              <legend>Olen valmis kokeilemaan tavallista pidempiä rTMS- ja tDCS-hoitosarjoja.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-19" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-19" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-19" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-            <fieldset id="kohta-20" data-topic="Magneettistimulaatiokäynnit">
-              <legend>Pystyn käymään rTMS-hoidossa Helsingissä virka-aikaan useita kertoja viikossa noin kahden kuukauden ajan.</legend>
-              <div class="survey-options">
-                <label><input type="radio" name="kohta-20" value="yes"> Pitää paikkansa</label>
-                <label><input type="radio" name="kohta-20" value="no"> Ei pidä paikkaansa</label>
-                <label><input type="radio" name="kohta-20" value="unsure"> En ole varma</label>
-              </div>
-            </fieldset>
-          </section>
+        <fieldset id="kohta-1" data-topic="Ikä" data-review-answer="no">
+          <legend>Oletko 18–67-vuotias?</legend>
+          <div class="survey-options">
+            <label><input type="radio" name="kohta-1" value="yes"> Kyllä</label>
+            <label><input type="radio" name="kohta-1" value="no"> Ei</label>
+            <label><input type="radio" name="kohta-1" value="unsure"> En ole varma</label>
+          </div>
+        </fieldset>
+        <fieldset id="kohta-2" data-topic="Asiointi ja kyselyihin vastaaminen suomeksi" data-review-answer="no">
+          <legend>Pystytkö asioimaan ja vastaamaan kyselyihin suomeksi?</legend>
+          <div class="survey-options">
+            <label><input type="radio" name="kohta-2" value="yes"> Kyllä</label>
+            <label><input type="radio" name="kohta-2" value="no"> Ei</label>
+            <label><input type="radio" name="kohta-2" value="unsure"> En ole varma</label>
+          </div>
+        </fieldset>
+        <fieldset id="kohta-3" data-topic="Masennusdiagnoosi ja nykyiset oireet" data-review-answer="no">
+          <legend>Onko sinulla todettu masennus, ja onko sinulla edelleen merkittäviä masennusoireita?</legend>
+          <div class="survey-options">
+            <label><input type="radio" name="kohta-3" value="yes"> Kyllä</label>
+            <label><input type="radio" name="kohta-3" value="no"> Ei</label>
+            <label><input type="radio" name="kohta-3" value="unsure"> En ole varma</label>
+          </div>
+        </fieldset>
+        <fieldset id="kohta-4" data-topic="Nykyisen masennusjakson kesto" data-review-answer="no" aria-describedby="kohta-4-ohje">
+          <legend>Oletko ollut nykyisellä masennusjaksollasi alle kaksi vuotta?</legend>
+          <p class="survey-hint" id="kohta-4-ohje">Aiempia masennusjaksoja saa olla. Kysymys koskee vain viimeisintä, edelleen jatkuvaa masennusjaksoasi.</p>
+          <div class="survey-options">
+            <label><input type="radio" name="kohta-4" value="yes"> Kyllä</label>
+            <label><input type="radio" name="kohta-4" value="no"> Ei</label>
+            <label><input type="radio" name="kohta-4" value="unsure"> En ole varma</label>
+          </div>
+        </fieldset>
+        <fieldset id="kohta-5" data-topic="Aiemmat lääkekokeilut" data-review-answer="no">
+          <legend>Oletko kokeillut vähintään kahta eri mieliala- tai masennuslääkettä?</legend>
+          <div class="survey-options">
+            <label><input type="radio" name="kohta-5" value="yes"> Kyllä</label>
+            <label><input type="radio" name="kohta-5" value="no"> Ei</label>
+            <label><input type="radio" name="kohta-5" value="unsure"> En ole varma</label>
+          </div>
+        </fieldset>
+        <fieldset id="kohta-6" data-topic="Muut diagnoosit" data-review-answer="yes">
+          <legend>Onko sinulla todettu kaksisuuntainen mielialahäiriö, psykoosisairaus tai epilepsia?</legend>
+          <div class="survey-options">
+            <label><input type="radio" name="kohta-6" value="yes"> Kyllä</label>
+            <label><input type="radio" name="kohta-6" value="no"> Ei</label>
+            <label><input type="radio" name="kohta-6" value="unsure"> En ole varma</label>
+          </div>
+        </fieldset>
+        <fieldset id="kohta-7" data-topic="Implantit, kiinteät metalliosat ja lävistykset" data-review-answer="yes">
+          <legend>Onko sinulla kehossasi implantteja, kiinteitä metalliosia tai lävistyksiä, joita et pysty itse poistamaan?</legend>
+          <div class="survey-options">
+            <label><input type="radio" name="kohta-7" value="yes"> Kyllä</label>
+            <label><input type="radio" name="kohta-7" value="no"> Ei</label>
+            <label><input type="radio" name="kohta-7" value="unsure"> En ole varma</label>
+          </div>
+        </fieldset>
+        <fieldset id="kohta-8" data-topic="Pään tai kaulan alueen tatuoinnit ja kestopigmentoinnit" data-review-answer="yes">
+          <legend>Onko sinulla pään tai kaulan alueella tatuointeja tai kestopigmentointeja, kuten kestopigmentoidut kulmakarvat tai silmien rajaukset?</legend>
+          <div class="survey-options">
+            <label><input type="radio" name="kohta-8" value="yes"> Kyllä</label>
+            <label><input type="radio" name="kohta-8" value="no"> Ei</label>
+            <label><input type="radio" name="kohta-8" value="unsure"> En ole varma</label>
+          </div>
+        </fieldset>
+        <fieldset id="kohta-9" data-topic="Raskaus tai imetys" data-review-answer="yes">
+          <legend>Oletko raskaana tai imetätkö?</legend>
+          <div class="survey-options">
+            <label><input type="radio" name="kohta-9" value="yes"> Kyllä</label>
+            <label><input type="radio" name="kohta-9" value="no"> Ei</label>
+            <label><input type="radio" name="kohta-9" value="unsure"> En ole varma</label>
+          </div>
+        </fieldset>
+        <fieldset id="kohta-10" data-topic="Hoitokäyntien järjestyminen" data-review-answer="no">
+          <legend>Pystytkö käymään hoidossa Helsingissä virka-aikaan useita kertoja viikossa noin kahden kuukauden ajan?</legend>
+          <div class="survey-options">
+            <label><input type="radio" name="kohta-10" value="yes"> Kyllä</label>
+            <label><input type="radio" name="kohta-10" value="no"> Ei</label>
+            <label><input type="radio" name="kohta-10" value="unsure"> En ole varma</label>
+          </div>
+        </fieldset>
         <div class="survey-actions" hidden>
           <button class="button" type="button" id="nayta-yhteenveto">Näytä yhteenveto</button>
           <button type="reset" class="text-button">Tyhjennä vastaukset</button>
@@ -222,18 +120,27 @@
       </form>
       <section class="survey-result" id="yhteenveto" aria-labelledby="yhteenveto-otsikko" hidden>
         <h2 id="yhteenveto-otsikko" tabindex="-1">Yhteenveto vastauksistasi</h2>
-        <p id="vastatut"></p>
+        <p id="vastatut" role="status"></p>
         <div id="keskusteltavat" hidden>
-          <p>Näistä kohdista voit keskustella hoitavan lääkärisi kanssa.</p>
+          <p>Näistä kohdista kannattaa jutella hoitavan lääkärisi tai tutkimushenkilökunnan kanssa.</p>
           <ul id="keskusteltavat-kohdat"></ul>
         </div>
-        <p>Jos olet kiinnostunut tutkimuksesta, kysy hoitavalta lääkäriltäsi TMS-lähetteen mahdollisuudesta. Soveltuvuus arvioidaan terveydenhuollossa.</p>
+        <p>Lopullinen päätös osallistumisesta tehdään yhdessä tutkimushenkilökunnan kanssa.</p>
+        <p>Jos kiinnostuit, kysy hoitavalta lääkäriltäsi TMS-lähetteestä HUSin psykiatrian neuromodulaatiokeskukseen.</p>
+        <p id="rtms-tutkimuksen-ulkopuolella" hidden>Vaikka et soveltuisi tutkimukseen, voit keskustella lääkärisi kanssa rTMS hoidon mahdollisuudesta.</p>
       </section>
     </div>
   </main>
-  <footer>
+  <footer class="partner-footer">
     <div class="wrap footer-inner">
-      <p>Aalto-yliopisto · Helsingin yliopisto · HUS</p>
+      <ul class="partner-logos" role="list" aria-label="Tutkimuksen toteuttajat">
+        <li><img src="assets/logo-aalto-yliopisto.png" alt="Aalto-yliopisto" width="585" height="511" loading="lazy"></li>
+        <li>
+          <img class="helsinki-logo" src="assets/hy-tunnus-fi.svg" alt="Helsingin yliopisto" width="283" height="256" loading="lazy">
+        </li>
+        <li><img class="hus-logo" src="assets/logo-hus.png" alt="HUS" width="194" height="89" loading="lazy"></li>
+      </ul>
+      <p>Lisätietoa tutkimuksesta: <a href="mailto:aivotutkimus-nc@helsinki.fi">aivotutkimus-nc@helsinki.fi</a></p>
       <a href="#alku">Takaisin alkuun</a>
     </div>
   </footer>
