@@ -80,7 +80,8 @@ footer { border-top: 1px solid var(--line); color: var(--muted); }
 .partner-footer .footer-inner { padding-block: 0.5rem; gap: 0.35rem 1rem; }
 .partner-logos {
   display: grid;
-  grid-template-columns: repeat(3, 4.25rem);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(100%, 26.5rem);
   gap: 0.5rem;
   margin: 0;
   padding: 0;
@@ -93,13 +94,13 @@ footer { border-top: 1px solid var(--line); color: var(--muted); }
   justify-items: center;
   text-align: center;
   color: var(--ink);
-  font-size: 0.625rem;
+  font-size: clamp(0.75rem, 4vw, 1.25rem);
   font-weight: 700;
   line-height: 1.2;
 }
-.partner-logos img { width: 3.25rem; height: auto; }
-.partner-logos .helsinki-flame { width: 1.8rem; }
-.partner-logos .hus-logo { width: 4.25rem; }
+.partner-logos img { width: 76.5%; height: auto; }
+.partner-logos .helsinki-flame { width: 42.35%; }
+.partner-logos .hus-logo { width: 100%; }
 
 @media (max-width: 56rem) {
   .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0; }
