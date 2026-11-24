@@ -76,6 +76,29 @@ details p { padding-bottom: 1rem; }
 .criteria h3 { margin-bottom: 0.6rem; }
 footer { border-top: 1px solid var(--line); color: var(--muted); }
 .footer-inner { padding-block: 1.5rem; font-size: 0.9rem; }
+.partner-footer { background: #fff; }
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.5rem, 3vw, 1.75rem);
+  width: min(100%, 25rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.partner-logos li {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  color: var(--ink);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.partner-logos img { width: 5.5rem; height: auto; }
+.partner-logos .helsinki-flame { width: 3.25rem; }
+.partner-logos .hus-logo { width: 6rem; }
 
 @media (max-width: 56rem) {
   .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0; }
