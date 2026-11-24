@@ -99,7 +99,7 @@ footer { border-top: 1px solid var(--line); color: var(--muted); }
   line-height: 1.2;
 }
 .partner-logos img { width: 76.5%; height: auto; }
-.partner-logos .helsinki-flame { width: 42.35%; }
+.partner-logos .helsinki-logo { width: 76.5%; }
 .partner-logos .hus-logo { width: 100%; }
 
 @media (max-width: 56rem) {
