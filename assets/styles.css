@@ -30,8 +30,8 @@ nav a { min-height: 2.75rem; display: inline-flex; align-items: center; font-siz
 .hero { background: var(--mint); padding-block: clamp(2rem, 5vw, 4.75rem) clamp(1.5rem, 3vw, 2.5rem); }
 .hero-grid { display: grid; grid-template-columns: 1.06fr 1fr; gap: clamp(1.5rem, 5vw, 4rem); align-items: center; }
 .eyebrow { color: var(--accent); font-size: 0.875rem; font-weight: 750; margin-bottom: 1rem; }
-h1, h2, h3 { line-height: 1.12; text-wrap: balance; overflow-wrap: anywhere; }
-h1 { font-size: clamp(2.45rem, 5vw, 4.65rem); letter-spacing: -0.055em; overflow-wrap: anywhere; hyphens: auto; }
+h1, h2, h3 { line-height: 1.12; overflow-wrap: break-word; hyphens: none; }
+h1 { font-size: clamp(2.45rem, 5vw, 4.65rem); letter-spacing: -0.055em; }
 h2 { font-size: clamp(2rem, 3.6vw, 3.25rem); letter-spacing: -0.045em; }
 h3 { font-size: 1.24rem; letter-spacing: -0.015em; }
 p + p { margin-top: 0.9rem; }
