@@ -90,7 +90,7 @@ footer { border-top: 1px solid var(--line); color: var(--muted); }
 .partner-logos li {
   display: grid;
   min-height: 6.5rem;
-  align-content: center;
+  align-content: start;
   justify-items: center;
   text-align: center;
   color: var(--ink);
