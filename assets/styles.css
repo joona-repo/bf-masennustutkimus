@@ -59,7 +59,7 @@ figcaption { margin-top: 0.5rem; color: var(--muted); font-size: 0.875rem; }
 .section h2 + p { margin-top: 1rem; }
 .protocol { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 6vw, 5.5rem); }
 .protocol > div > p, .steps p, .criteria p, .research p { color: var(--muted); }
-.tdcs-heading { margin: 1.5rem 0 0.5rem; }
+.treatment-heading { margin: 1.5rem 0 0.5rem; }
 .steps { list-style: none; counter-reset: step; margin: 0; padding: 0; }
 .steps li { position: relative; padding: 0.95rem 0 1.1rem 3.15rem; min-height: 3.5rem; border-top: 1px solid var(--line); counter-increment: step; }
 .steps li::before { content: counter(step); position: absolute; left: 0; top: 0.82rem; display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: 50%; background: var(--mint); color: var(--accent); font-weight: 750; }
